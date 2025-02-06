@@ -1,6 +1,11 @@
-﻿public class Solution
+﻿
+foreach (var number in Solution.TwoSum([1, 2, 3, 4, 5, 6, 7, 8, 9], 9))
 {
-    public int[] TwoSum(int[] nums, int target)
+    Console.WriteLine(number);
+}
+public static class Solution
+{
+    public static int[] TwoSum(int[] nums, int target)
     {
         Dictionary<int,int> map = new Dictionary<int,int>();
         for (int i = 0; i < nums.Length; i++)
