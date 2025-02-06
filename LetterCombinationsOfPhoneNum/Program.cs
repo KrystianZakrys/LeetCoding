@@ -30,24 +30,8 @@ public static class Solution
         if (digits.Length == 0)
             return letterCombinations;
 
-        string keyLetters = keyPadMap[digits[0]];
-        string innerResult = "";
-
-        for (int i = 0; i < keyLetters.Length; i++)
-        {
-            innerResult += keyLetters[i];
-
-            if (digits.Length > 1)
-            {
-                innerResult = CombineLetters(digits, 1, innerResult, ref letterCombinations);
-            }
-            else
-            {
-                letterCombinations.Add(innerResult);
-            }
-
-            innerResult = "";
-        }
+        //This method of recursion is names Backtracking because you backtrack from the end node of the recursion.
+        CombineLetters(digits, 0, "", ref letterCombinations);
 
         return letterCombinations;
     }
@@ -66,7 +50,16 @@ public static class Solution
         for (int i = 0; i < keyLetters.Length; i++)
         {
             innerResult += keyLetters[i];
-            CombineLetters(digits, digitsIndex + 1, innerResult, ref result);
+
+            if (digits.Length > 1)
+            {
+                innerResult = CombineLetters(digits, digitsIndex + 1, innerResult, ref result);
+            }
+            else
+            {
+                result.Add(innerResult);
+            }
+            
             innerResult = inputResult;
         }
 
