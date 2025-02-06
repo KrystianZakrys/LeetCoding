@@ -21,49 +21,61 @@ public static class Solution
     { '8', "tuv" },
     { '9', "wxyz" }
 };
-    public static IList<string> LetterCombinations(string digits)
+
+    static List<string> letterCombinations = new List<string>();
+    public static IList<string> LetterCombinations(string digits, Delegate func)
     {
 
-
-        List<string> letterCombinations = new List<string>();
-
-        if (digits.Length == 0)
+        if (string.IsNullOrEmpty(digits))
             return letterCombinations;
 
         //This method of recursion is names Backtracking because you backtrack from the end node of the recursion.
-        CombineLetters(digits, 0, "", ref letterCombinations);
+        //CombineLetters(digits, 0, "");
+
+        //More elegant way to do this recursive backtracking
+        CombineLettersWithSubstring("", digits);        
 
         return letterCombinations;
     }
 
-    private static string CombineLetters(string digits, int digitsIndex, string innerResult, ref List<String> result)
+    private static void CombineLetters(string digits, int digitsIndex, string innerResult)
     {
         if(digits.Length == digitsIndex)
         {
-            result.Add(innerResult);
-            return innerResult;
+            letterCombinations.Add(innerResult);
+            return ;
         }
         
         string inputResult = innerResult;
-        string keyLetters = keyPadMap[digits[digitsIndex]];
-
-        for (int i = 0; i < keyLetters.Length; i++)
+        
+        foreach (char letter in keyPadMap[digits[digitsIndex]])
         {
-            innerResult += keyLetters[i];
-
             if (digits.Length > 1)
             {
-                innerResult = CombineLetters(digits, digitsIndex + 1, innerResult, ref result);
+               CombineLetters(digits, digitsIndex + 1, innerResult + letter);
             }
             else
             {
-                result.Add(innerResult);
+                letterCombinations.Add(innerResult + letter);
             }
-            
+
             innerResult = inputResult;
         }
 
-        return innerResult;
     }
 
+    private static void CombineLettersWithSubstring(string combination, string digits)
+    {
+        if(digits.Length == 0)
+        {
+            letterCombinations.Add(combination);
+        }
+        else
+        {
+            foreach (char letter in keyPadMap[digits[0]])
+            {
+                CombineLettersWithSubstring(combination + letter, digits.Substring(1));
+            }
+        }
+    }
 }
