@@ -23,7 +23,7 @@ public static class Solution
 };
 
     static List<string> letterCombinations = new List<string>();
-    public static IList<string> LetterCombinations(string digits, Delegate func)
+    public static IList<string> LetterCombinations(string digits)
     {
 
         if (string.IsNullOrEmpty(digits))
