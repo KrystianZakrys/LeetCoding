@@ -8,6 +8,8 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{141BD38A-C710-42DE-B27F-75977571687D}"
 	ProjectSection(SolutionItems) = preProject
 		.gitignore = .gitignore
+		BestTimeToBuyAndSellStock.cs = BestTimeToBuyAndSellStock.cs
+		IsSubsequence.cs = IsSubsequence.cs
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LetterCombinationsOfPhoneNum", "LetterCombinationsOfPhoneNum\LetterCombinationsOfPhoneNum.csproj", "{5E3DEBE1-1AD7-408D-9400-9C0925C90073}"
@@ -22,6 +24,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CombinationSum", "CombinationSum\CombinationSum.csproj", "{6C9A9866-F3C9-49AF-A105-7FB98613740B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClosestNum", "ClosestNum\ClosestNum.csproj", "{4901CB5E-9AAB-4D69-A9D1-E066E35E71A7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MergeStringAlretnatively", "MergeStringAlretnatively\MergeStringAlretnatively.csproj", "{D11F0D43-C24E-4579-A77F-2D6F191D9A76}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RomanToInteger", "RomanToInteger\RomanToInteger.csproj", "{6743565C-B832-42A0-86B7-FFBF17650553}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -49,6 +55,14 @@ Global
 		{4901CB5E-9AAB-4D69-A9D1-E066E35E71A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4901CB5E-9AAB-4D69-A9D1-E066E35E71A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4901CB5E-9AAB-4D69-A9D1-E066E35E71A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D11F0D43-C24E-4579-A77F-2D6F191D9A76}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D11F0D43-C24E-4579-A77F-2D6F191D9A76}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D11F0D43-C24E-4579-A77F-2D6F191D9A76}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D11F0D43-C24E-4579-A77F-2D6F191D9A76}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6743565C-B832-42A0-86B7-FFBF17650553}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6743565C-B832-42A0-86B7-FFBF17650553}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6743565C-B832-42A0-86B7-FFBF17650553}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6743565C-B832-42A0-86B7-FFBF17650553}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
