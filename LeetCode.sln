@@ -21,6 +21,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "22 - Generate Parentheses",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CombinationSum", "CombinationSum\CombinationSum.csproj", "{6C9A9866-F3C9-49AF-A105-7FB98613740B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClosestNum", "ClosestNum\ClosestNum.csproj", "{4901CB5E-9AAB-4D69-A9D1-E066E35E71A7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -43,6 +45,10 @@ Global
 		{6C9A9866-F3C9-49AF-A105-7FB98613740B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6C9A9866-F3C9-49AF-A105-7FB98613740B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6C9A9866-F3C9-49AF-A105-7FB98613740B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4901CB5E-9AAB-4D69-A9D1-E066E35E71A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4901CB5E-9AAB-4D69-A9D1-E066E35E71A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4901CB5E-9AAB-4D69-A9D1-E066E35E71A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4901CB5E-9AAB-4D69-A9D1-E066E35E71A7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
