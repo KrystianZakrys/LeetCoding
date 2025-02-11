@@ -10,6 +10,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		.gitignore = .gitignore
 		BestTimeToBuyAndSellStock.cs = BestTimeToBuyAndSellStock.cs
 		IsSubsequence.cs = IsSubsequence.cs
+		LongestCommonPrefix.cs = LongestCommonPrefix.cs
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LetterCombinationsOfPhoneNum", "LetterCombinationsOfPhoneNum\LetterCombinationsOfPhoneNum.csproj", "{5E3DEBE1-1AD7-408D-9400-9C0925C90073}"
